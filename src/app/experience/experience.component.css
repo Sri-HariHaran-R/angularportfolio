@@ -117,6 +117,10 @@ article .icon
   {
     margin-top: 0;
   }
+  .deployment
+  {
+    text-align: center;
+  }
 }
 
 @media all and (max-width:600px)
@@ -133,11 +137,17 @@ article .icon
   {
     font-size:1.25rem;
   }
-  .about-container
+  .article-container
   {
     flex-wrap: wrap;
   }
-  .title {
+  .deployment
+  {
+    text-align: center;
+  }
+  .title 
+  {
     font-size: 2rem;
   }
+  
 }
