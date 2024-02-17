@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit
   constructor()
   {
     this.project1="./assets/images/project-1.png";
-    this.project2="/assets/images/project-2.png";
+    this.project2="./assets/images/project-2.png";
     this.arrow="./assets/images/arrow.png";
   }
 
