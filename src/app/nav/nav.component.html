@@ -1,0 +1,57 @@
+<!-- 
+<nav>
+  <div class="logo">
+    Sri HariHaran R
+  </div>
+
+  <ul [ngClass]="{'showmenu':isMenuOpen}">
+    <li><a routerLink="">Home</a></li>
+    <li><a routerLink="">Experience</a></li>
+    <li><a routerLink="">Projects</a></li>
+    <li><a routerLink="">Contact</a></li>
+  </ul>
+
+  <div class="menu" (click)="show()">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
+</nav> -->
+
+<nav id="desktop-nav">
+  <div class="logo">
+    Sri HariHaran R
+  </div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experirence</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="hamburger-nav">
+  <div class="logo">Sri HariHaran R</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" (click)="show()" [class.open]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links" [class.open]="isMenuOpen">
+      <li><a href="#about" (click)="show()">About</a></li>
+      <li><a href="#experience" (click)="show()">Experience</a></li>
+      <li><a routerLink="" (click)="show()">Projects</a></li>
+      <li><a routerLink="" (click)="show()">Contact</a></li>
+    </div>
+  </div>  
+</nav>
+
+<script>
+  var menu=document.querySelector('.menu-links');
+  var icon=document.querySelector('.hamburger-icon');
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+</script>

@@ -1,0 +1,21 @@
+<section id="profile">
+  <div class="section__pic-container">
+    <img [src]="imagePath" [alt]="alternate">                                                                                                                                              
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">
+      Hello,I'm
+    </p>
+    <h1 class="title">Sri HariHaran</h1>
+    <p class="section__text__p2">Intern At Ford Motor Pvt Ltd </p>
+    <div class="btn-container">
+      <button class="btn btn-color-2" (click)="showResume()">Download CV</button>
+      <a href="#contact"><button class="btn btn-color-1">Contact Info</button></a>
+    </div>
+
+    <div id="socials-container">
+      <img [src]="linkedInPath" alt="LinkedIn Profile" class="icon" (click)="linkedIn()">
+      <img [src]="githubPath" alt="Github Profile" class="icon" (click)="github()">
+    </div>
+  </div>
+</section>
